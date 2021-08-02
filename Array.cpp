@@ -100,8 +100,5 @@ int main()
 
 	int data[] = { 1,2,3 };//work with change_array
 	change_array(data, 3);
-
-
-	
 }	
 
