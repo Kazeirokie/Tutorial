@@ -5,14 +5,8 @@ using namespace std;
 
 class User // default class is private
 {
-	std::string _status = "Passed";
 public:
-	std::string _first_name;
-	std::string _last_name;
-	std::string get_status() // This is getter..get info from private class
-	{
-		return _status;
-	}
+	
 	virtual void output()
 	{
 		std::cout << "I am a user" << endl;
@@ -41,18 +35,6 @@ public:
 	}
 };
 
-std::ostream& operator << (std::ostream& output, User user) // Must have output
-{
-	output << "First name: " << user._first_name << "\nLast name: " << user._last_name;
-	return output;
-}
-
-std::istream& operator >> (std::istream& input, User& user) // Must have input
-{
-	input >> user._first_name >> user._last_name;
-	return input;
-}
-
 void separate_class(User& user)
 {
 	user.output();
@@ -60,12 +42,13 @@ void separate_class(User& user)
 
 int main()
 {
+	Teacher teacher;
 	Student student;     // Create student to get data from class Student
 	User& u1 = teacher;  //u1 represent user1
 	User& u2 = student;
 
-	//u1.output();  //output function inherit from User class
-	//u2.output();
+	u1.output();  //output function inherit from User class
+	u2.output();
 
 	separate_class(u1);  //act the same like u1.output
 	separate_class(u2);
