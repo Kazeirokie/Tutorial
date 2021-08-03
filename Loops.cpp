@@ -1,13 +1,13 @@
+// Factorial is 4!(4x3x2x1) , 5!(5x4x3x2x1)
+// Uncomment loop one by one ( Do Not Open Simultaneously)
 #include <iostream>
-using std::cout;
-using std::cin;
-//factorial is 4!(4x3x2x1) , 5!(5x4x3x2x1)
+using namespace std;
 
 int main()
-
 {
+	/*
 	//While loops
-	/*int factorial;
+	int factorial;
 	cout << "Insert the factorial : ";
 	cin >> factorial;
 	int i = factorial - 1;
@@ -16,28 +16,33 @@ int main()
 		factorial *= i;
 		i--;
 	}
-	cout << "\n The answer is : " << factorial;*/
+	cout << "\n The answer is : " << factorial;
+	*/
 
+	/*
 	//For loops
-	/*int factorial;
+	int factorial;
 	cout << "Insert the factorial : ";
 	cin >> factorial;
 	for (int i = factorial - 1; i > 1; i--)
 	{
 		factorial *= i;
 	}
-	cout << "The answer is : "<<factorial;*/
-
+	cout << "The answer is : "<<factorial;
+	*/
+	
+	/*
 	//Do While Loop
-	/*std::string password = "kazeirokie";
+	std::string password = "kazeirokie";
 	std::string guess;
 	do
 	{
 		std::cout << "Enter the password : ";
 		std::cin >> guess;
 		std::cout << "Welcome Aminul";
-
-	} while (guess != password);*/
+	} 
+	while (guess != password);
+	*/
 
 	//Range-based For Loops
 	int data[] = { 1,2,3,4,5,6 };
